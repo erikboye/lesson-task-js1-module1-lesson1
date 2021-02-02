@@ -73,16 +73,19 @@ const car = {
 
 console.log(car.paintColour, car.numberOfWheels);
 
-
 //Q10
 
 const product = {
-    name: "Chicken Lips",
-    price: 35,
-    expired: false,
-    getExpired: function(){
-        console.log(Is this product expired: ${this.expired})
+  name: "Chicken Lips",
+  price: 35,
+  expired: false,
+  getExpired: function () {
+    if (this.expired) {
+      console.log(`This ${this.name} is not expired`);
+    } else {
+      console.log(`This ${this.name} is expired`);
     }
+  },
 };
 
-//råde
+product.getExpired();
