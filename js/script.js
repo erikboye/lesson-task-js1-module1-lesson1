@@ -84,3 +84,5 @@ const product = {
         console.log(Is this product expired: ${this.expired})
     }
 };
+
+//råde
